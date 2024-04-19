@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+    <EditText
+        android:id="@+id/et_origin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="#FFDCDCDC"
+        android:hint="출발지를 입력하시오"
+        />
+
+    <EditText
+        android:id="@+id/et_dest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="목적지를 입력하시오"
+        android:textColor="@color/white"
+        android:textColorHint="#FFDCDCDC"
+        />
+
+
+    <android.widget.Button
+        android:id="@+id/btn_search"
+        android:layout_width="350dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:text="search"
+        android:background="@drawable/button_design"
+        android:textColor="#FFE150"
+        android:textSize="70dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_wayInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="길찾기 정보" />
+
+    </ScrollView>
+
+    <android.widget.Button
+        android:id="@+id/btn_toBusInfo"
+        android:layout_width="350dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:text="Bus"
+        android:background="@drawable/button_design"
+        android:textColor="#FFE150"
+        android:textSize="70dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
